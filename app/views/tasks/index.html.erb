@@ -3,5 +3,6 @@
 <% @tasks.each do |task| %>
   <h2><%= task.name %>(<%= task.id %>) -> <%= task.description %></h2>
 <% end %>
+<h3><%= link_to "Adicionar nova task", new_task_path(@task)%></h3>
 </center>
 
